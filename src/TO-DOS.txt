@@ -1,0 +1,3 @@
+- fix getbook button
+- write pieces that allow for books to be searched in getbook.js
+- move getbook.js back into booksapp.js?

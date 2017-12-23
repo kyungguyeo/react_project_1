@@ -1,2 +1,10 @@
-# react_project_1
-MyReads: React Udacity Tutorial Project #1
+# MyReads Project
+
+This is my version of the myReads project - created by kyungguyeo.
+
+To start, simply run:
+
+```
+npm install
+npm start
+```
