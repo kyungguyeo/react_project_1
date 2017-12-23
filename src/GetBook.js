@@ -41,9 +41,10 @@ class GetBook extends React.Component {
             <div className="search-books-results">
               {this.state.search_results.map((book) => (
                 <ol key={book.id} className="books-grid">
+                  {console.log(this.props.books.findIndex((mybook) => (mybook.id === book.id)) !== -1 ? this.props.books[this.props.books.findIndex((mybook) => (mybook.id === book.id))].shelf : 'none')}
                   <Book 
                     handleChange={this.props.handleChange}
-                    book_shelf={'none'}
+                    book_shelf={this.props.books.findIndex((mybook) => (mybook.id === book.id)) !== -1 ? this.props.books[this.props.books.findIndex((mybook) => (mybook.id === book.id))].shelf : 'none'}
                     id={book.id}
                     book_title={book.title}
                     author={book.authors ? book.authors[0] : ""}
